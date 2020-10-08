@@ -15,7 +15,7 @@ class res_partner_inherit(models.Model):
     tareget_in_out = fields.Selection([('in','IN'),('out','OUT')],string='Tareget')
     direct_sales_users = fields.Many2many('res.users',string="Direct Sales Users")
 
-    gender = fields.Selection([('m', 'Male'), ('f', 'Female')])
+    # gender = fields.Selection([('m', 'Male'), ('f', 'Female')])
     authority = fields.Selection([
         ('closed', 'Closed'),
         ('open', 'Open'),

@@ -21,7 +21,6 @@
 
     # any module necessary for this one to work correctly
     'depends': ['base','account','account_accountant','hr','hr_contract','hr_payroll_account'],
-# hr_payroll_account
 
     # always loaded
     'data': [

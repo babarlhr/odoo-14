@@ -20,14 +20,11 @@
                     <field name="vendor" string="Is a vendor"/>
                 </xpath>
 
-                <xpath expr="//field[@name='user_id']" position="before">
-                    <field name="customer_kind" /><!--attrs="{'invisible': [('customer', '=', False)],'required':[('customer', '!=', False)]}"-->
-                </xpath>
-
         <xpath expr="//notebook/page[@name='sales_purchases']" position="after">
             <page name="sales_configuration" string="Sales Configuration" ><!--attrs="{'invisible': [('customer', '=', False)]}"-->
                             <group name="container_row_2">
                                 <group string="Customer">
+                                    <field name="customer_kind"/>
                                     <field name="authority"/>
                                     <field name="customer_category"/>
                                     <field name="suregon_code" /><!--attrs="{'invisible': [('customer_kind', '!=', 'surgeon' )],'required': [('customer_kind', '=', 'surgeon')]}"-->
