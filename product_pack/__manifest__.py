@@ -2,7 +2,7 @@
     'name': 'Surgitech Product Pack',
     'version': '1.1',
     'category': 'Sales',
-    'depends': ['sale'],
+    'depends': ['sale','stock'],
 
     'data': [
 
