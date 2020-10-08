@@ -13,6 +13,8 @@
     'depends': ['purchase', 'stock', 'l10n_us'],
     'data': [
         'wizard/merge_puchase_order_wizard_view.xml',
+        'security/ir.model.access.csv',
+        'security/merge_purchase_order.xml',
     ],
 
     'images': [
