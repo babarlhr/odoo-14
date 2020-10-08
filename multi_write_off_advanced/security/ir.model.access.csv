@@ -3,4 +3,5 @@ access_writeoff_accounts,writeoff.accounts,model_writeoff_accounts,account.group
 access_writeoff_accounts_accountant,writeoff.accounts accountant,model_writeoff_accounts,account.group_account_user,1,0,0,0
 access_writeoff_accounts_user,writeoff.accounts user,model_writeoff_accounts,base.group_user,1,0,0,0
 access_writeoff_amount_amount,amount amount,model_amount_amount,,1,0,0,0
+access_writeoff_writeoff_multi,writeoff.multi,model_writeoff_multi,,1,1,1,1
 
