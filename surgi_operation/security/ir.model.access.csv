@@ -4,7 +4,7 @@ stock.access_stock_stock_move_line_user,stock.move.line user,stock.model_stock_m
 stock.access_stock_stock_move_line_all,stock.move.line all users,stock.model_stock_move_line,base.group_user,1,1,1,1
 portal_stock.access_stock_pack_operation_portal,stock.move.line portal,stock.model_stock_move_line,base.group_portal,1,0,0,0
 read_for_all,read for all,surgi_operation.model_operation_operation,surgi_operation.operations_viewer_group,1,0,0,0
-product_operation_type_admin ,Admin product operation type,surgi_operation.model_product_operation_type,base.group_erp_manager,1,1,1,1
+product_operation_type_admin ,Admin product operation type,surgi_operation.model_product_operation_type,base.group_system,1,1,1,1
 operation_product_line_viewer,operation product line,surgi_operation.model_product_operation_line,surgi_operation.operations_viewer_group,1,0,0,0
 operation_product_line_user,operation product line,surgi_operation.model_product_operation_line,surgi_operation.operations_user_group,1,1,1,1
 product_operation_type_user,user product operation type,surgi_operation.model_product_operation_type,surgi_operation.operations_user_group,1,0,0,0
