@@ -69,11 +69,11 @@
                                 <field name="lot_no"/>
                                 <field name="pick_Typ_code" invisible="1"/>
 
-                                <!--<field name="lot_name" string="Lot Name"-->
+                                <!--<field name="lot_name" string="Lot No."-->
                                 <!--attrs="{'invisible': [('pick_Typ_code', '!=', 'incoming')]}"/>-->
                                 <!--<field name="expiration_date"-->
                                 <!--attrs="{'invisible': [('pick_Typ_code', '!=', 'incoming')]}"/>-->
-                                <field name="lot_name" string="Lot Name"/>
+                                <field name="lot_name" string="Lot No."/>
                                 <field name="expiration_date"/>
                                 <field name="product_availabilty"/>
                             </tree>
@@ -86,10 +86,8 @@
                                 <field name="product_uom_qty"/>
                                 <field name="lot_no"/>
                                 <field name="pick_Typ_code" invisible="1"/>
-                                <field name="lot_name" string="Lot Name"
-                                />
-                                <field name="expiration_date"
-                                />
+                                <field name="lot_name" string="Lot No."/>
+                                <field name="expiration_date"/>
                             </tree>
                         </field>
 

@@ -8,14 +8,12 @@ from odoo.tools.translate import _
 class CustomStockProductionLot(models.Model):
     _inherit = "stock.production.lot"
 
-    lot_name = fields.Char(string='Lot Name',  help="Unique Serial Number")
+    lot_name = fields.Char(string='Lot No.',  help="Lot Number")
     expiration_date = fields.Date()
-    gs_mrn = fields.Char(string='GS MRN')
     import_ref = fields.Char(string='Import Ref.')
 
 class CustomStockPackOperation(models.Model):
     _inherit = "stock.move.line"
 
-    lot_name = fields.Char(string='Serial Number', help="Unique Serial Number")
+    lot_name = fields.Char(string='Lot No.', help="Lot Number")
     expiration_date=fields.Date()
-

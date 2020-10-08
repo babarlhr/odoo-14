@@ -12,6 +12,6 @@ class stock_move_inherit(models.Model):
     _inherit = 'stock.move'
 
     check_is_scanned = fields.Boolean(string="Is Scanned Product")
-    lot_name = fields.Char(string='Serial Number', help="Unique Serial Number")
+    lot_name = fields.Char(string='Lot No.', help="Lot Number")
     expiration_date = fields.Date(string="Expiration Date")
     product_uom = fields.Many2one('uom.uom', 'Unit of Measure', required=False)
