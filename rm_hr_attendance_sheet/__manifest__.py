@@ -29,11 +29,11 @@
         'views/hr_attendance_policy_view.xml',
         'views/hr_contract_view.xml',
         'views/hr_public_holiday_view.xml',
-        'data/data.xml',
+        # 'data/data.xml',
     ],
 
     'license': 'OPL-1',
-    'demo': [
-        'demo/demo.xml',
-    ],
+    # 'demo': [
+    #     'demo/demo.xml',
+    # ],
 }
