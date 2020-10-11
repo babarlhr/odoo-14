@@ -20,7 +20,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','hr','hr_attendance','hr_holidays','project','surgi_evaluation','surgi_attendance_sheet','attendance_sheet_extra','hr_appraisal'],
+    'depends': ['base','hr','hr_attendance','hr_holidays','project','surgi_evaluation','surgi_attendance_sheet','attendance_sheet_extra','hr_appraisal','emp_attendance_google_map_app'],
 
     # always loaded
     'data': [

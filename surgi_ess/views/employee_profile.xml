@@ -84,10 +84,6 @@
                                             <span class="o_unfollow">Unfollow</span>
                                             <span class="o_following">Following</span>
                                         </button>
-<!--                                        <button t-if="!record.message_is_follower.raw_value" name="action_follow"-->
-<!--                                                type="object" class="o_follow_btn o_follow btn btn-sm btn-primary">-->
-<!--                                            Follow-->
-<!--                                        </button>-->
                                     </div>
                                 </div>
                             </div>
@@ -97,7 +93,7 @@
 
             </field>
         </record>
-        <!--================================================================================================-->
+
 
         <record id="surgi_ess_employee_profile_form_view" model="ir.ui.view">
             <field name="name">surgi.ess.employee.profile.form.view</field>
@@ -121,11 +117,7 @@
                                        options="{'color_field': 'color', 'no_create_edit': True}"
                                        placeholder="e.g. Part Time" groups="hr.group_hr_user"/>
                                 <br/>
-                                <!--                                <label for="remaining_leaves" style="font-weight:bold;"/>-->
-                                <!--                                <div>-->
-                                <!--                                    <field name="remaining_leaves" class="oe_inline"/>-->
-                                <!--                                    days-->
-                                <!--                                </div>-->
+
                                 <notebook>
                                     <page name="public" string="Work Information">
                                         <group>
@@ -197,13 +189,7 @@
                                                 <field name="user_id" string="Related User" readonly="1"
                                                        options="{'no_open': True}"/>
                                             </group>
-                                            <!--                                            <group string="Leaves">-->
-                                            <!--                                                <label for="remaining_leaves"/>-->
-                                            <!--                                                <div>-->
-                                            <!--                                                    <field name="remaining_leaves" class="oe_inline"/>-->
-                                            <!--                                                    days-->
-                                            <!--                                                </div>-->
-                                            <!--                                            </group>-->
+
                                         </group>
                                     </page>
                                 </notebook>
@@ -218,7 +204,6 @@
             </field>
         </record>
 
-        <!--================================================================================================-->
 
         <record id="surgi_ess_employee_profile_search" model="ir.ui.view">
             <field name="name">surgi.ess.employee.profile.search</field>
@@ -245,19 +230,16 @@
                 </search>
             </field>
         </record>
-        <!--================================================================================================-->
 
         <record id="surgi_ess_employee_profile_action" model="ir.actions.act_window">
             <field name="name">Employees Profile</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">hr.employee</field>
-            <!--            <field name="view_type">form</field>-->
             <field name="view_mode">kanban,form</field>
             <field name="domain">[('user_id', '=', uid)]</field>
             <field name="context">{}</field>
             <field name="search_view_id" ref="surgi_ess_employee_profile_search"/>
         </record>
-        <!--================================================================================================-->
 
         <record model="ir.actions.act_window.view" id="prof_kanban_surgi_ess_employee_profile_action">
             <field name="sequence" eval="1"/>
@@ -265,7 +247,6 @@
             <field name="view_id" ref="surgi_ess_employee_profile_kanban_view"/>
             <field name="act_window_id" ref="surgi_ess_employee_profile_action"/>
         </record>
-        <!--================================================================================================-->
 
         <record model="ir.actions.act_window.view" id="surgi_ess_employee_profile_action_form">
             <field name="sequence" eval="3"/>
@@ -273,7 +254,6 @@
             <field name="view_id" ref="surgi_ess_employee_profile_form_view"/>
             <field name="act_window_id" ref="surgi_ess_employee_profile_action"/>
         </record>
-        <!--================================================================================================-->
 
 
         <record id="surgi_ess_employee_profile_inherit_org_chart" model="ir.ui.view">
@@ -289,7 +269,6 @@
                 </div>
             </field>
         </record>
-        <!--================================================================================================-->
 
 
         <menuitem id="employee_menu_employee_profile_list" name="Profile"
